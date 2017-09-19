@@ -19,15 +19,13 @@
   </script>
   <body>
     <div class="example" id="variables">
-      <h2><a href="./">Go por Exemplo</a>: Variables</h2>
+      <h2><a href="./">Go por Exemplo</a>: Variáveis</h2>
       
       <table>
         
         <tr>
           <td class="docs">
-            <p>In Go, <em>variables</em> are explicitly declared and used by
-the compiler to e.g. check type-correctness of function
-calls.</p>
+            <p>Em Go, <em>variáveis</em> são explicitamente declaradas e usadas pelo compilador.</p>
 
           </td>
           <td class="code empty leading">
@@ -74,7 +72,7 @@ calls.</p>
         
         <tr>
           <td class="docs">
-            <p><code>var</code> declares 1 or more variables.</p>
+            <p><code>var</code> declara 1 ou mais variáveis.</p>
 
           </td>
           <td class="code leading">
@@ -87,8 +85,8 @@ calls.</p>
         </tr>
         
         <tr>
-          <td class="docs">
-            <p>You can declare multiple variables at once.</p>
+          <td class="docs"> 
+            <p>Você pode declarar múltiplas variáveis de uma vez.</p>
 
           </td>
           <td class="code leading">
@@ -102,7 +100,7 @@ calls.</p>
         
         <tr>
           <td class="docs">
-            <p>Go will infer the type of initialized variables.</p>
+            <p>Go irá inferir o tipo da variável inicializada.</p>
 
           </td>
           <td class="code leading">
@@ -119,6 +117,8 @@ calls.</p>
             <p>Variables declared without a corresponding
 initialization are <em>zero-valued</em>. For example, the
 zero value for an <code>int</code> is <code>0</code>.</p>
+            <p>Variáveis declaradas sem a inicialização são <code>zero-valued</code>. Por exemplo,
+              o valor zero para um <code>int</code> é <code>0</code></p>
 
           </td>
           <td class="code leading">
@@ -135,6 +135,7 @@ zero value for an <code>int</code> is <code>0</code>.</p>
             <p>The <code>:=</code> syntax is shorthand for declaring and
 initializing a variable, e.g. for
 <code>var f string = &quot;short&quot;</code> in this case.</p>
+            <p>A synxtax <code>:=</code> é um encurtador para declarar uma inicialização de variávei, o que corresponderia á <code>var f string = &quot;short&quot;</code></p>
 
           </td>
           <td class="code">
@@ -172,7 +173,7 @@ initializing a variable, e.g. for
       
       
       <p class="next">
-        Próximo exemplo: <a href="constants">Constants</a>.
+        Próximo exemplo: <a href="constants">Constantes</a>.
       </p>
       
       <p class="footer">
