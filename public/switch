@@ -25,8 +25,7 @@
         
         <tr>
           <td class="docs">
-            <p><em>Switch statements</em> express conditionals across many
-branches.</p>
+            <p><em>Declarações Switch</em> expressão condições através de diversas ramificações.</p>
 
           </td>
           <td class="code empty leading">
@@ -74,7 +73,7 @@ branches.</p>
         
         <tr>
           <td class="docs">
-            <p>Here&rsquo;s a basic <code>switch</code>.</p>
+            <p>Aqui está um <code>switch</code> básico.</p>
 
           </td>
           <td class="code leading">
@@ -96,9 +95,8 @@ branches.</p>
         
         <tr>
           <td class="docs">
-            <p>You can use commas to separate multiple expressions
-in the same <code>case</code> statement. We use the optional
-<code>default</code> case in this example as well.</p>
+            <p>Você pode utilizara vírgula para separar múltiplas expressões dentro de uma mesma declaração de <code>case</code>.
+              Podemos utilizar opcionalmente o <code>default</code> neste exemplo</p>
 
           </td>
           <td class="code leading">
@@ -116,9 +114,7 @@ in the same <code>case</code> statement. We use the optional
         
         <tr>
           <td class="docs">
-            <p><code>switch</code> without an expression is an alternate way
-to express if/else logic. Here we also show how the
-<code>case</code> expressions can be non-constants.</p>
+            <p><code>switch</code> sem uma expressão é um modo diferente de expressar a mesma lógica de if/else. Aqui nós também mostramos como a expressão <code>case</code> pode ser não-constante.</p>
 
           </td>
           <td class="code leading">
@@ -137,10 +133,7 @@ to express if/else logic. Here we also show how the
         
         <tr>
           <td class="docs">
-            <p>A type <code>switch</code> compares types instead of values.  You
-can use this to discover the the type of an interface
-value.  In this example, the variable <code>t</code> will have the
-type corresponding to its clause.</p>
+            <p>Um tipo <code>switch</code> compara tipos ao invés de valores. Você pode usar isto para descobrir o tipo de o valor de uma interface. Neste exemplo, a variável <code>t</code> terá o tipo correspondente á condição.</p>
 
           </td>
           <td class="code">
