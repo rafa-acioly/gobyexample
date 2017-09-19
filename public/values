@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Go by Example: Values</title>
+    <title>Go by Example: Valores</title>
     <link rel=stylesheet href="site.css">
   </head>
   <script type="text/javascript">
@@ -19,15 +19,13 @@
   </script>
   <body>
     <div class="example" id="values">
-      <h2><a href="./">Go by Example</a>: Values</h2>
+      <h2><a href="./">Go by Example</a>: Valores
       
       <table>
         
         <tr>
           <td class="docs">
-            <p>Go has various value types including strings,
-integers, floats, booleans, etc. Here are a few
-basic examples.</p>
+            <p>Go tem diversos tipos de valores incluindo strings, integers, floats, booleans, etc. Aqui esta alguns exemplos básicos.</p>
 
           </td>
           <td class="code empty leading">
@@ -75,6 +73,7 @@ basic examples.</p>
         <tr>
           <td class="docs">
             <p>Strings, which can be added together with <code>+</code>.</p>
+            <p>Strings, podem ser concatenadas utilizando <code>+</code>.</p>
 
           </td>
           <td class="code leading">
@@ -87,7 +86,7 @@ basic examples.</p>
         
         <tr>
           <td class="docs">
-            <p>Integers and floats.</p>
+            <p>Integers e floats.</p>
 
           </td>
           <td class="code leading">
@@ -102,6 +101,7 @@ basic examples.</p>
         <tr>
           <td class="docs">
             <p>Booleans, with boolean operators as you&rsquo;d expect.</p>
+            <p>Booleans, com operadores booleans como esperado.</p>
 
           </td>
           <td class="code">
@@ -141,7 +141,7 @@ basic examples.</p>
       
       
       <p class="next">
-        Next example: <a href="variables">Variables</a>.
+        Próximo exemplo: <a href="variables">Variaveis</a>.
       </p>
       
       <p class="footer">
