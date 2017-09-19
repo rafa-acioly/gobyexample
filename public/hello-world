@@ -25,8 +25,8 @@
         
         <tr>
           <td class="docs">
-            <p>Our first program will print the classic &ldquo;hello world&rdquo;
-message. Here&rsquo;s the full source code.</p>
+              Nosso primeiro programa exibirá uma mensagem de &ldquo;hello world&rdquo; Aqui está o código fonte.
+            </p>
 
           </td>
           <td class="code leading">
@@ -69,8 +69,7 @@ message. Here&rsquo;s the full source code.</p>
         
         <tr>
           <td class="docs">
-            <p>To run the program, put the code in <code>hello-world.go</code> and
-use <code>go run</code>.</p>
+            <p>Para executar o programa, coloque o código em um arquivo chamado <code>hello-world.go</code> e use o comando <code>go run</code>.</p>
 
           </td>
           <td class="code leading">
@@ -84,9 +83,7 @@ use <code>go run</code>.</p>
         
         <tr>
           <td class="docs">
-            <p>Sometimes we&rsquo;ll want to build our programs into
-binaries. We can do this using <code>go build</code>.</p>
-
+            <p>Algumas vezes nós queremos compilar nosso programa para binário. Podemos fazer isso usando <code>go build</code>.</p>
           </td>
           <td class="code leading">
 	        
@@ -100,8 +97,7 @@ binaries. We can do this using <code>go build</code>.</p>
         
         <tr>
           <td class="docs">
-            <p>We can then execute the built binary directly.</p>
-
+            <p>Nós podemos então executar o arquivo binário diretamente.</p>
           </td>
           <td class="code leading">
 	        
@@ -114,8 +110,7 @@ binaries. We can do this using <code>go build</code>.</p>
         
         <tr>
           <td class="docs">
-            <p>Now that we can run and build basic Go programs, let&rsquo;s
-learn more about the language.</p>
+            <p>Agora que podemos compilar e executar um programa básico com Go, vamos aprender mais sobre a linguagem</p>
 
           </td>
           <td class="code empty">
@@ -128,7 +123,7 @@ learn more about the language.</p>
       
       
       <p class="next">
-        Next example: <a href="values">Values</a>.
+        Próximo exemplo: <a href="values">Valores</a>.
       </p>
       
       <p class="footer">
