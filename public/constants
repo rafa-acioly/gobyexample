@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Go por Exemplo: Constants</title>
+    <title>Go por Exemplo: Constantes</title>
     <link rel=stylesheet href="site.css">
   </head>
   <script type="text/javascript">
@@ -19,14 +19,13 @@
   </script>
   <body>
     <div class="example" id="constants">
-      <h2><a href="./">Go por Exemplo</a>: Constants</h2>
+      <h2><a href="./">Go por Exemplo</a>: Constantes</h2>
       
       <table>
         
         <tr>
           <td class="docs">
-            <p>Go supports <em>constants</em> of character, string, boolean,
-and numeric values.</p>
+            <p>Go suporta <em>constantes</em> para carácteres, string, boolean, e valores numéricos</p>
 
           </td>
           <td class="code empty leading">
@@ -62,7 +61,7 @@ and numeric values.</p>
         
         <tr>
           <td class="docs">
-            <p><code>const</code> declares a constant value.</p>
+            <p><code>const</code> declara um valor constante.</p>
 
           </td>
           <td class="code leading">
@@ -88,8 +87,7 @@ and numeric values.</p>
         
         <tr>
           <td class="docs">
-            <p>A <code>const</code> statement can appear anywhere a <code>var</code>
-statement can.</p>
+            <p>Uma declaração <code>const</code> pode aparecer em qualquer lugar onde uma declaração <code>var</code> também possa.</p>
 
           </td>
           <td class="code leading">
@@ -102,8 +100,7 @@ statement can.</p>
         
         <tr>
           <td class="docs">
-            <p>Constant expressions perform arithmetic with
-arbitrary precision.</p>
+            <p>Expressões constantes podem ser definidas com uma expressão aritmética com precissão arbitrária.</p>
 
           </td>
           <td class="code leading">
@@ -117,8 +114,7 @@ arbitrary precision.</p>
         
         <tr>
           <td class="docs">
-            <p>A numeric constant has no type until it&rsquo;s given
-one, such as by an explicit cast.</p>
+            <p>Uma constante numérica não possui um tipo até que seja passado, tal como por uma definição explícita.</p>
 
           </td>
           <td class="code leading">
@@ -131,10 +127,8 @@ one, such as by an explicit cast.</p>
         
         <tr>
           <td class="docs">
-            <p>A number can be given a type by using it in a
-context that requires one, such as a variable
-assignment or function call. For example, here
-<code>math.Sin</code> expects a <code>float64</code>.</p>
+            <p>Um numero pode receber um tipo ao usa-lo em um contexto, tal como a definição de uma variável ou chamada de função, 
+              Por exemplo, <code>math.Sin</code> requer um <code>float64</code></p>
 
           </td>
           <td class="code">
