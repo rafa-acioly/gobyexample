@@ -25,8 +25,7 @@
         
         <tr>
           <td class="docs">
-            <p><em>Functions</em> are central in Go. We&rsquo;ll learn about
-functions with a few different examples.</p>
+            <p><em>Functions</em> são um ponto central em Go. Nós iremos aprender mais sobre funções com alguns exemplos diferentes para melhor entendimento.</p>
 
           </td>
           <td class="code empty leading">
@@ -61,8 +60,7 @@ functions with a few different examples.</p>
         
         <tr>
           <td class="docs">
-            <p>Here&rsquo;s a function that takes two <code>int</code>s and returns
-their sum as an <code>int</code>.</p>
+            <p>Esta é uma função que recebe dois parâmetros <code>int</code> (inteiros) e retorna a soma dos mesmos como um <code>int</code> (inteiro).</p>
 
           </td>
           <td class="code leading">
@@ -75,9 +73,7 @@ their sum as an <code>int</code>.</p>
         
         <tr>
           <td class="docs">
-            <p>Go requires explicit returns, i.e. it won&rsquo;t
-automatically return the value of the last
-expression.</p>
+            <p>Go requer retornos explicitos, i.e O valor da ultima expressão não será retornado automaticamente.</p>
 
           </td>
           <td class="code leading">
@@ -91,10 +87,7 @@ expression.</p>
         
         <tr>
           <td class="docs">
-            <p>When you have multiple consecutive parameters of
-the same type, you may omit the type name for the
-like-typed parameters up to the final parameter that
-declares the type.</p>
+            <p>Quando você possui multiplos parametros consecutivos do mesmo tipo, você pode omitir o nome do tipo de cada um e declarar apenas ao final.</p>
 
           </td>
           <td class="code leading">
@@ -121,8 +114,7 @@ declares the type.</p>
         
         <tr>
           <td class="docs">
-            <p>Call a function just as you&rsquo;d expect, with
-<code>name(args)</code>.</p>
+            <p>Chamar uma função funciona do mesmo modo que você já sabe, use <code>name(args)</code>.</p>
 
           </td>
           <td class="code leading">
@@ -168,8 +160,7 @@ declares the type.</p>
         
         <tr>
           <td class="docs">
-            <p>There are several other features to Go functions. One is
-multiple return values, which we&rsquo;ll look at next.</p>
+            <p>Existem diversas outros recursos para funções Go, um deles é o retorno multiplo de valores, com qual nós trabalharemos a seguir.</p>
 
           </td>
           <td class="code empty">
@@ -182,7 +173,7 @@ multiple return values, which we&rsquo;ll look at next.</p>
       
       
       <p class="next">
-        Próximo exemplo: <a href="multiple-return-values">Multiple Return Values</a>.
+        Próximo exemplo: <a href="multiple-return-values">Retorno Multiplo de Valores.</a>.
       </p>
       
       <p class="footer">
