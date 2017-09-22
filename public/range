@@ -25,9 +25,7 @@
         
         <tr>
           <td class="docs">
-            <p><em>range</em> iterates over elements in a variety of data
-structures. Let&rsquo;s see how to use <code>range</code> with some
-of the data structures we&rsquo;ve already learned.</p>
+            <p><em>range</em> itera sobre elementos em diversos tipos de estruturas de dados. Vamos ver como usar <code>range</code> com algumas estruturas de dados que já aprendemos.</p>
 
           </td>
           <td class="code empty leading">
@@ -74,8 +72,7 @@ of the data structures we&rsquo;ve already learned.</p>
         
         <tr>
           <td class="docs">
-            <p>Here we use <code>range</code> to sum the numbers in a slice.
-Arrays work like this too.</p>
+            <p>Aqui nós usmamos <code>range</code> para somar os numeros em um slice. Arrays funcionam bem desta maneira também.</p>
 
           </td>
           <td class="code leading">
@@ -93,11 +90,7 @@ Arrays work like this too.</p>
         
         <tr>
           <td class="docs">
-            <p><code>range</code> on arrays and slices provides both the
-index and value for each entry. Above we didn&rsquo;t
-need the index, so we ignored it with the
-blank identifier <code>_</code>. Sometimes we actually want
-the indexes though.</p>
+            <p><code>range</code> com arrays e slices provêem ambos, valores e indices para cada entrada/par. Acima nós não precisavamos do indice, então o ignoramos com um identificados vazio <code>_</code>. Porém algumas vezes nós realmente precisamos do indice.</p>
 
           </td>
           <td class="code leading">
@@ -114,7 +107,7 @@ the indexes though.</p>
         
         <tr>
           <td class="docs">
-            <p><code>range</code> on map iterates over key/value pairs.</p>
+            <p><code>range</code> em map itera sobre o par de chaves/valores.</p>
 
           </td>
           <td class="code leading">
@@ -130,7 +123,7 @@ the indexes though.</p>
         
         <tr>
           <td class="docs">
-            <p><code>range</code> can also iterate over just the keys of a map.</p>
+            <p><code>range</code> também pode iterar apenas sobre as chaves de um map.</p>
 
           </td>
           <td class="code leading">
@@ -145,9 +138,7 @@ the indexes though.</p>
         
         <tr>
           <td class="docs">
-            <p><code>range</code> on strings iterates over Unicode code
-points. The first value is the starting byte index
-of the <code>rune</code> and the second the <code>rune</code> itself.</p>
+          <p><code>range</code> em strings itera sobre o ponto de código Unicode. O primeiro valor é o bite inicial e o segundo é ele próprio.</p>
 
           </td>
           <td class="code">
@@ -189,7 +180,7 @@ of the <code>rune</code> and the second the <code>rune</code> itself.</p>
       
       
       <p class="next">
-        Próximo exemplo: <a href="functions">Functions</a>.
+        Próximo exemplo: <a href="functions">Funções</a>.
       </p>
       
       <p class="footer">
