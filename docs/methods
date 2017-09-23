@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Go por Exemplo: Methods</title>
+    <title>Go por Exemplo: Métodos</title>
     <link rel=stylesheet href="site.css">
   </head>
   <script type="text/javascript">
@@ -19,13 +19,13 @@
   </script>
   <body>
     <div class="example" id="methods">
-      <h2><a href="./">Go por Exemplo</a>: Methods</h2>
+      <h2><a href="./">Go por Exemplo</a>: Métodos</h2>
       
       <table>
         
         <tr>
           <td class="docs">
-            <p>Go supports <em>methods</em> defined on struct types.</p>
+            <p>Go suporta <em>métodos</em> definidos em tipos estrutura.</p>
 
           </td>
           <td class="code empty leading">
@@ -74,7 +74,7 @@
         
         <tr>
           <td class="docs">
-            <p>This <code>area</code> method has a <em>receiver type</em> of <code>*rect</code>.</p>
+            <p>Este método <code>area</code> possui um receptor do tipo <code>*rect</code>.</p>
 
           </td>
           <td class="code leading">
@@ -89,8 +89,7 @@
         
         <tr>
           <td class="docs">
-            <p>Methods can be defined for either pointer or value
-receiver types. Here&rsquo;s an example of a value receiver.</p>
+            <p>Métodos podem ser definidos para ponteiros ou valores de recebimento. Aqui está um exemplo de um valor de recebimento.</p>
 
           </td>
           <td class="code leading">
@@ -118,7 +117,7 @@ receiver types. Here&rsquo;s an example of a value receiver.</p>
         
         <tr>
           <td class="docs">
-            <p>Here we call the 2 methods defined for our struct.</p>
+            <p>Aqui nós chamamos os 2 métodos definidos em nossa struct.</p>
 
           </td>
           <td class="code leading">
@@ -132,11 +131,7 @@ receiver types. Here&rsquo;s an example of a value receiver.</p>
         
         <tr>
           <td class="docs">
-            <p>Go automatically handles conversion between values
-and pointers for method calls. You may want to use
-a pointer receiver type to avoid copying on method
-calls or to allow the method to mutate the
-receiving struct.</p>
+            <p>Go automáticamente manuseia a conversão entre valores e ponteiros para chamadas e métodos. Você talvez queira usar o recebimento de ponteiro para prevenir copias em métodos chamados ou para permitir que o método possa alterar o recebimento de struct.</p>
 
           </td>
           <td class="code">
@@ -172,8 +167,7 @@ receiving struct.</p>
         
         <tr>
           <td class="docs">
-            <p>Next we&rsquo;ll look at Go&rsquo;s mechanism for grouping and
-naming related sets of methods: interfaces.</p>
+            <p>A seguir nós veremos as mecânicas em Go para agrupar e nomear conjuntos de métodos: interfaces.</p>
 
           </td>
           <td class="code empty">
