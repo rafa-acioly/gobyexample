@@ -76,7 +76,7 @@
         
         <tr>
           <td class="docs">
-            <p><code>zeroptr</code> possui um parâmetro <code>*int</code>, significando que recebe um parâmetro ponteiro <code>int</code>. O código <code>*iptr</code> no corpo da função deferencia o ponteiro no endereço de memória para o valor atual no endereço. Atribuindo o valor para o ponteiro deferenciado muda o valor do endereço referenciado.</p>
+            <p><code>zeroptr</code> possui um parâmetro <code>*int</code>, significando que recebe um parâmetro ponteiro <code>int</code>. O código <code>*iptr</code> no corpo da função desreferencia o ponteiro no endereço de memória para o valor atual no endereço. Atribuindo o valor para o ponteiro deferenciado muda o valor do endereço referenciado.</p>
 
           </td>
           <td class="code leading">
