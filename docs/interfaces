@@ -25,8 +25,7 @@
         
         <tr>
           <td class="docs">
-            <p><em>Interfaces</em> are named collections of method
-signatures.</p>
+            <p><em>Interfaces</em> são coleções nomeadas de assinaturas de método.</p>
 
           </td>
           <td class="code empty leading">
@@ -62,7 +61,7 @@ signatures.</p>
         
         <tr>
           <td class="docs">
-            <p>Here&rsquo;s a basic interface for geometric shapes.</p>
+            <p>Aqui está uma interface básica para uma forma geométrica.</p>
 
           </td>
           <td class="code leading">
@@ -78,8 +77,7 @@ signatures.</p>
         
         <tr>
           <td class="docs">
-            <p>For our example we&rsquo;ll implement this interface on
-<code>rect</code> and <code>circle</code> types.</p>
+            <p>Para nosso exemplo nós iremos implementar esta interface em nos tipos <code>rect</code> e <code>circle</code>.</p>
 
           </td>
           <td class="code leading">
@@ -97,9 +95,7 @@ signatures.</p>
         
         <tr>
           <td class="docs">
-            <p>To implement an interface in Go, we just need to
-implement all the methods in the interface. Here we
-implement <code>geometry</code> on <code>rect</code>s.</p>
+            <p>Para implementar uma interface em Go, nós simplesmente precisamos implementar todos os métodos definidor na interface. Aqui nós implementamos <code>geometry</code> em <code>react</code>.</p>
 
           </td>
           <td class="code leading">
@@ -116,8 +112,8 @@ implement <code>geometry</code> on <code>rect</code>s.</p>
         </tr>
         
         <tr>
-          <td class="docs">
-            <p>The implementation for <code>circle</code>s.</p>
+          <td class="docs"> 
+            <p>A implementação para <code>circle</code>.</p>
 
           </td>
           <td class="code leading">
@@ -135,10 +131,7 @@ implement <code>geometry</code> on <code>rect</code>s.</p>
         
         <tr>
           <td class="docs">
-            <p>If a variable has an interface type, then we can call
-methods that are in the named interface. Here&rsquo;s a
-generic <code>measure</code> function taking advantage of this
-to work on any <code>geometry</code>.</p>
+            <p>Se a variável tem um tipo interface, então nós podemos chamar os métodos que estão definidos na interface. Aqui está uma função genérica <code>measure</code> que tira proveito disto para funcionar com qualquer variável que possua a interface <code>geometry</code>.</p>
 
           </td>
           <td class="code leading">
@@ -169,10 +162,7 @@ to work on any <code>geometry</code>.</p>
         
         <tr>
           <td class="docs">
-            <p>The <code>circle</code> and <code>rect</code> struct types both
-implement the <code>geometry</code> interface so we can use
-instances of
-these structs as arguments to <code>measure</code>.</p>
+            <p>As structs <code>circle</code> e <code>rect</code> mambos implementam a interface <code>geometry</code> então nós podemos usar a instância destas strucs como argumentos para <code>measure</code>.</p>
 
           </td>
           <td class="code">
@@ -209,8 +199,7 @@ these structs as arguments to <code>measure</code>.</p>
         
         <tr>
           <td class="docs">
-            <p>To learn more about Go&rsquo;s interfaces, check out this
-<a href="http://jordanorelli.tumblr.com/post/32665860244/how-to-use-interfaces-in-go">great blog post</a>.</p>
+            <p>Para aprender mais sobre interfaces em Go, veja este <a href="http://jordanorelli.tumblr.com/post/32665860244/how-to-use-interfaces-in-go">ótimo post</a>.</p>
 
           </td>
           <td class="code empty">
@@ -223,7 +212,7 @@ these structs as arguments to <code>measure</code>.</p>
       
       
       <p class="next">
-        Próximo exemplo: <a href="errors">Errors</a>.
+        Próximo exemplo: <a href="errors">Erros</a>.
       </p>
       
       <p class="footer">
