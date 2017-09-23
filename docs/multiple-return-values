@@ -19,13 +19,14 @@
   </script>
   <body>
     <div class="example" id="multiple-return-values">
-      <h2><a href="./">Go por Exemplo</a>: Retorno Multiplo de Valores</h2>
+      <h2><a href="./">Go por Exemplo</a>: Retorno de Multiplos Valores</h2>
       
       <table>
         
         <tr>
           <td class="docs">
-            <p>Go possui suporte embutido para <em>retorno multiplo de valores</em>. Este recurso é usado com frequência em Go, por exemplo para retornar ambos, resultado e erros de funções.</p>
+            <p>Go possui um suporte embutido para <em>retorno de multiplos valores</em>. Este recurso é usado frequêntemente em Go. por exemplo,
+            para retornar ambos, resultados de expressões e erros em uma função.</p>
 
           </td>
           <td class="code empty leading">
@@ -60,7 +61,7 @@
         
         <tr>
           <td class="docs">
-            <p>O <code>(int, int)</code> é a assinatura da função que mostra que a função retorna dois <code>int</code>s (inteiros).</p>
+            <p>O <code>(int, int)</code> é a assinatura da função que mostra que uma função retorna 2 <code>int</code>s.</p>
 
           </td>
           <td class="code leading">
@@ -87,7 +88,7 @@
         
         <tr>
           <td class="docs">
-            <p>Aqui nós usamos 2 diferentes retornos para a chamada da função com <em>multiplas atribuições</em>.</p>
+            <p>Aqui nós usamos 2 retornos de uma chamada de função com <em>multipla atribuição</em>.</p>
 
           </td>
           <td class="code leading">
@@ -102,7 +103,7 @@
         
         <tr>
           <td class="docs">
-            <p>Se você só quiser o subset do valor retornado, use o identificados vazio <code>_</code>.</p>
+            <p>Se você quiser somente o segundo retorno de uma chamada de função, use o identificador vazio <code>_</code>.</p>
 
           </td>
           <td class="code">
@@ -136,7 +137,7 @@
         
         <tr>
           <td class="docs">
-            <p>Aceitar um número variado de argumentos é um outro recurso em Go muito útil, veremos isto a seguir.</p>
+            <p>Aceitar um numero variável de argumentos em uma função é outro recurso ótimo em funções com Go. Nós olharemos isso a seguir.</p>
 
           </td>
           <td class="code empty">
@@ -149,7 +150,7 @@
       
       
       <p class="next">
-        Próximo exemplo: <a href="variadic-functions">Variadic Functions</a>.
+        Próximo exemplo: <a href="variadic-functions">Funções Variadicas</a>.
       </p>
       
       <p class="footer">

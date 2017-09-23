@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Go por Exemplo: Slices</title>
+    <link rel=stylesheet href="site.css">
+  </head>
+  <script type="text/javascript">
+    if (window.location.host == "gobyexample.com") {
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-34996217-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    }
+  </script>
+  <body>
+    <div class="example" id="slices">
+      <h2><a href="./">Go por Exemplo</a>: Slices</h2>
+      
+      <table>
+        
+        <tr>
+          <td class="docs">
+            <p><em>Slices</em> são o tipo chave em Go, dando um interface mais poderosa de sequências do que arrays.</p>
+
+          </td>
+          <td class="code empty leading">
+	        
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code leading">
+	        <a href="http://play.golang.org/p/dPQErsP6Yc"><img title="Run code" src="play.png" class="run" /></a>
+            <div class="highlight"><pre><span class="kn">package</span> <span class="nx">main</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code leading">
+	        
+            <div class="highlight"><pre><span class="kn">import</span> <span class="s">&quot;fmt&quot;</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code leading">
+	        
+            <div class="highlight"><pre><span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Ao contrario de arrays, os tipos de valores de um slice são definidos pelo elemento que ele contém (não pelo numero de elementos). Para criar um slice vazio sem um vaor zero para o tamanho use a funão embutida <code>make</code>. Aqui nós criamos um slice com <code>string</code>s com tamanho de <code>3</code> (inicializado com valores vazios)</p>
+
+          </td>
+          <td class="code leading">
+	        
+            <div class="highlight"><pre>    <span class="nx">s</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">([]</span><span class="kt">string</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;emp:&quot;</span><span class="p">,</span> <span class="nx">s</span><span class="p">)</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Nós podemos definir e pegar os valores do mesmo modo como fazemos com arrays.</p>
+
+          </td>
+          <td class="code leading">
+	        
+            <div class="highlight"><pre>    <span class="nx">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">=</span> <span class="s">&quot;a&quot;</span>
+    <span class="nx">s</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">=</span> <span class="s">&quot;b&quot;</span>
+    <span class="nx">s</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="p">=</span> <span class="s">&quot;c&quot;</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;set:&quot;</span><span class="p">,</span> <span class="nx">s</span><span class="p">)</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;get:&quot;</span><span class="p">,</span> <span class="nx">s</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>A função <code>len</code> retorna o tamanho de um slice como esperado.</p>
+
+          </td>
+          <td class="code leading">
+	        
+            <div class="highlight"><pre>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;len:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nx">s</span><span class="p">))</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Além destas operações básicas, slices suportam muito mais que criar estruturas melhores que array. Uma delas é a função embutida <code>append</code>, que retorna um slice contendo um ou mais novos valores.
+            Note que nós precisamos armazenar o retorno da função append para podermos utilizar o novo slice com os novos valores.</p>
+
+          </td>
+          <td class="code leading">
+	        
+            <div class="highlight"><pre>    <span class="nx">s</span> <span class="p">=</span> <span class="nb">append</span><span class="p">(</span><span class="nx">s</span><span class="p">,</span> <span class="s">&quot;d&quot;</span><span class="p">)</span>
+    <span class="nx">s</span> <span class="p">=</span> <span class="nb">append</span><span class="p">(</span><span class="nx">s</span><span class="p">,</span> <span class="s">&quot;e&quot;</span><span class="p">,</span> <span class="s">&quot;f&quot;</span><span class="p">)</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;apd:&quot;</span><span class="p">,</span> <span class="nx">s</span><span class="p">)</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Slices também podem ser copiados (<code>copy</code>). Aqui nós criamos um slice vazio <code>c</code> com o mesmo tamanho que <code>s</code> e copiando para <code>c</code> de <code>s</code>.</p>
+
+          </td>
+          <td class="code leading">
+	        
+            <div class="highlight"><pre>    <span class="nx">c</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">([]</span><span class="kt">string</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nx">s</span><span class="p">))</span>
+    <span class="nb">copy</span><span class="p">(</span><span class="nx">c</span><span class="p">,</span> <span class="nx">s</span><span class="p">)</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;cpy:&quot;</span><span class="p">,</span> <span class="nx">c</span><span class="p">)</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Slices suportam um operador de "pedaço" com a sintaxe <code>slice[low:high]</code>. Por exemplo, usando desta maneira coseguimos separar um pedaço do elemento <code>s[2]</code>, <code>s[3]</code> e <code>s[4]</code>.</p>
+
+          </td>
+          <td class="code leading">
+	        
+            <div class="highlight"><pre>    <span class="nx">l</span> <span class="o">:=</span> <span class="nx">s</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;sl1:&quot;</span><span class="p">,</span> <span class="nx">l</span><span class="p">)</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Um "pedaço" acima de (mas excluindo) <code>s[5]</code>.</p>
+
+          </td>
+          <td class="code leading">
+	        
+            <div class="highlight"><pre>    <span class="nx">l</span> <span class="p">=</span> <span class="nx">s</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;sl2:&quot;</span><span class="p">,</span> <span class="nx">l</span><span class="p">)</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>E um "pedaço" acima a partir (e incluindo) <code>s[2]</code>.</p>
+
+          </td>
+          <td class="code leading">
+	        
+            <div class="highlight"><pre>    <span class="nx">l</span> <span class="p">=</span> <span class="nx">s</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;sl3:&quot;</span><span class="p">,</span> <span class="nx">l</span><span class="p">)</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Nós podemos declarar e inicializar uma variavel para slice em uma única linha.</p>
+
+          </td>
+          <td class="code leading">
+	        
+            <div class="highlight"><pre>    <span class="nx">t</span> <span class="o">:=</span> <span class="p">[]</span><span class="kt">string</span><span class="p">{</span><span class="s">&quot;g&quot;</span><span class="p">,</span> <span class="s">&quot;h&quot;</span><span class="p">,</span> <span class="s">&quot;i&quot;</span><span class="p">}</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;dcl:&quot;</span><span class="p">,</span> <span class="nx">t</span><span class="p">)</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Slices podem ser compostos com estrutura multi-dimensional. O tamanho dos slices internos podem variar, ao contrário de arrays multi-dimensionais.</p>
+
+          </td>
+          <td class="code">
+	        
+            <div class="highlight"><pre>    <span class="nx">twoD</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">([][]</span><span class="kt">int</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="k">for</span> <span class="nx">i</span> <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="p">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">{</span>
+        <span class="nx">innerLen</span> <span class="o">:=</span> <span class="nx">i</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="nx">twoD</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="p">=</span> <span class="nb">make</span><span class="p">([]</span><span class="kt">int</span><span class="p">,</span> <span class="nx">innerLen</span><span class="p">)</span>
+        <span class="k">for</span> <span class="nx">j</span> <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span> <span class="p">&lt;</span> <span class="nx">innerLen</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span> <span class="p">{</span>
+            <span class="nx">twoD</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="nx">j</span><span class="p">]</span> <span class="p">=</span> <span class="nx">i</span> <span class="o">+</span> <span class="nx">j</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;2d: &quot;</span><span class="p">,</span> <span class="nx">twoD</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+      </table>
+      
+      <table>
+        
+        <tr>
+          <td class="docs">
+            <p>Note que mesmo arrays e slices sendo tipos diferentes, ambos são renderizados igualmente com <code>fmt.Println</code>.</p>
+
+          </td>
+          <td class="code leading">
+	        
+            <div class="highlight"><pre><span class="gp">$</span> go run slices.go
+<span class="go">emp: [  ]</span>
+<span class="go">set: [a b c]</span>
+<span class="go">get: c</span>
+<span class="go">len: 3</span>
+<span class="go">apd: [a b c d e f]</span>
+<span class="go">cpy: [a b c d e f]</span>
+<span class="go">sl1: [c d e]</span>
+<span class="go">sl2: [a b c d e]</span>
+<span class="go">sl3: [c d e f]</span>
+<span class="go">dcl: [g h i]</span>
+<span class="go">2d:  [[0] [1 2] [2 3 4]]</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Veja este <a href="http://blog.golang.org/2011/01/go-slices-usage-and-internals.html">incrivel post</a> no blog da equipe do Go, para mais detalhes sobre o design e implementações de slices.</p>
+
+          </td>
+          <td class="code empty leading">
+	        
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Note que nós já passamos por arrays e slices, agora nós olharemos para outras estruturas de dados embutidas em Go: maps.</p>
+
+          </td>
+          <td class="code empty">
+	        
+            
+          </td>
+        </tr>
+        
+      </table>
+      
+      
+      <p class="next">
+        Próximo exemplo: <a href="maps">Maps</a>.
+      </p>
+      
+      <p class="footer">
+        by <a href="https://twitter.com/mmcgrana">@mmcgrana</a> | <a href="mailto:mmcgrana@gmail.com">feedback</a> | <a href="https://github.com/mmcgrana/gobyexample/blob/master/examples/slices">source</a> | <a href="https://github.com/mmcgrana/gobyexample#license">license</a>
+      </p>
+    </div>
+  </body>
+</html>

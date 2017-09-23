@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Go por Exemplo: Arrays</title>
+    <link rel=stylesheet href="site.css">
+  </head>
+  <script type="text/javascript">
+    if (window.location.host == "gobyexample.com") {
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-34996217-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    }
+  </script>
+  <body>
+    <div class="example" id="arrays">
+      <h2><a href="./">Go por Exemplo</a>: Arrays</h2>
+      
+      <table>
+        
+        <tr>
+          <td class="docs">
+            <p>Em Go, um <em>array</em> é uma sequência numerada de elementos de um tamanho especifico.</p>
+
+          </td>
+          <td class="code empty leading">
+	        
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code leading">
+	        <a href="http://play.golang.org/p/l-A8eBnwio"><img title="Run code" src="play.png" class="run" /></a>
+            <div class="highlight"><pre><span class="kn">package</span> <span class="nx">main</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code leading">
+	        
+            <div class="highlight"><pre><span class="kn">import</span> <span class="s">&quot;fmt&quot;</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code leading">
+	        
+            <div class="highlight"><pre><span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Aqui criamos um array <code>a</code> que conterá exatamente 5 <code>inteiro</code>s. O tipo dos elementos e o tamanho do array são ambos parte do tipo do array. Por padrão um array é zero-valued, que para <code>inteiro</code>s significa <code>zeros</code>.</p>
+
+          </td>
+          <td class="code leading">
+	        
+            <div class="highlight"><pre>    <span class="kd">var</span> <span class="nx">a</span> <span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="kt">int</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;emp:&quot;</span><span class="p">,</span> <span class="nx">a</span><span class="p">)</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Nós podemos definir um valor para um determinado indice usando a sintaxe <code>array[index] = value</code> e para pegar o valor é usado <code>array[index]</code></p>
+
+          </td>
+          <td class="code leading">
+	        
+            <div class="highlight"><pre>    <span class="nx">a</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="p">=</span> <span class="mi">100</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;set:&quot;</span><span class="p">,</span> <span class="nx">a</span><span class="p">)</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;get:&quot;</span><span class="p">,</span> <span class="nx">a</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>A função <code>len</code> já vem embutida junto ao Go e retorna o tamanho de um array.</p>
+
+          </td>
+          <td class="code leading">
+	        
+            <div class="highlight"><pre>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;len:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nx">a</span><span class="p">))</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Use esta sintaxe para declarar e inicializar um array com valores usando apenas uma linha.</p>
+
+          </td>
+          <td class="code leading">
+	        
+            <div class="highlight"><pre>    <span class="nx">b</span> <span class="o">:=</span> <span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="kt">int</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;dcl:&quot;</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>O tipo array é uni-dimensional, mas você pode compor mais tipos para criar um array multi-dimensional</p>
+
+
+          </td>
+          <td class="code">
+	        
+            <div class="highlight"><pre>    <span class="kd">var</span> <span class="nx">twoD</span> <span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="kt">int</span>
+    <span class="k">for</span> <span class="nx">i</span> <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="p">&lt;</span> <span class="mi">2</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="nx">j</span> <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span> <span class="p">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span> <span class="p">{</span>
+            <span class="nx">twoD</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="nx">j</span><span class="p">]</span> <span class="p">=</span> <span class="nx">i</span> <span class="o">+</span> <span class="nx">j</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;2d: &quot;</span><span class="p">,</span> <span class="nx">twoD</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+      </table>
+      
+      <table>
+        
+        <tr>
+          <td class="docs">
+            <p>Note que array aparecem na forma de <code>[v1 v2 v3 ...]</code> quando exibido com <code>fmt.Println</code>.</p>
+
+          </td>
+          <td class="code leading">
+	        
+            <div class="highlight"><pre><span class="gp">$</span> go run arrays.go
+<span class="go">emp: [0 0 0 0 0]</span>
+<span class="go">set: [0 0 0 0 100]</span>
+<span class="go">get: 100</span>
+<span class="go">len: 5</span>
+<span class="go">dcl: [1 2 3 4 5]</span>
+<span class="go">2d:  [[0 1 2] [1 2 3]]</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Você vera <em>slices</em> com mais frequência que arrays em códigos com Go. Nós veremos conteúdo sobre slices a seguir.</p>
+
+          </td>
+          <td class="code empty">
+	        
+            
+          </td>
+        </tr>
+        
+      </table>
+      
+      
+      <p class="next">
+        Próximo exemplo: <a href="slices">Slices</a>.
+      </p>
+      
+      <p class="footer">
+        by <a href="https://twitter.com/mmcgrana">@mmcgrana</a> | <a href="mailto:mmcgrana@gmail.com">feedback</a> | <a href="https://github.com/mmcgrana/gobyexample/blob/master/examples/arrays">source</a> | <a href="https://github.com/mmcgrana/gobyexample#license">license</a>
+      </p>
+    </div>
+  </body>
+</html>
