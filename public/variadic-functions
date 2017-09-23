@@ -19,16 +19,14 @@
   </script>
   <body>
     <div class="example" id="variadic-functions">
-      <h2><a href="./">Go por Exemplo</a>: Variadic Functions</h2>
+      <h2><a href="./">Go por Exemplo</a>: Funções Variádicas</h2>
       
       <table>
         
         <tr>
           <td class="docs">
-            <p><a href="http://en.wikipedia.org/wiki/Variadic_function"><em>Variadic functions</em></a>
-can be called with any number of trailing arguments.
-For example, <code>fmt.Println</code> is a common variadic
-function.</p>
+          <p><a href="http://en.wikipedia.org/wiki/Variadic_function">Funções variádicas</a> podem ser chamada com qualquer numero de argumentos.
+            Por exemplo, <code>fmt.println</code> é uma função variádica comum.</p>
 
           </td>
           <td class="code empty leading">
@@ -63,8 +61,7 @@ function.</p>
         
         <tr>
           <td class="docs">
-            <p>Here&rsquo;s a function that will take an arbitrary number
-of <code>ints</code> as arguments.</p>
+            <p>Aqui está uma função que aceita um numero arbitrário de <code>ints</code>.</p>
 
           </td>
           <td class="code leading">
@@ -96,8 +93,7 @@ of <code>ints</code> as arguments.</p>
         
         <tr>
           <td class="docs">
-            <p>Variadic functions can be called in the usual way
-with individual arguments.</p>
+            <p>Funções variádicas podem ser chamadas do modo comum, com argumentos individuais.</p>
 
           </td>
           <td class="code leading">
@@ -111,9 +107,7 @@ with individual arguments.</p>
         
         <tr>
           <td class="docs">
-            <p>If you already have multiple args in a slice,
-apply them to a variadic function using
-<code>func(slice...)</code> like this.</p>
+            <p>Se você já tem multiplos argumentos em um slice, aplique então o uso da função variádica usando <code>func(slice...)</code> desta maneira.</p>
 
           </td>
           <td class="code">
@@ -147,8 +141,7 @@ apply them to a variadic function using
         
         <tr>
           <td class="docs">
-            <p>Another key aspect of functions in Go is their ability
-to form closures, which we&rsquo;ll look at next.</p>
+            <p>Outros aspecto chave das funções em Go é que elas possuem a habilidade encapsulamento, no qual iremos olhar a seguir.</p>
 
           </td>
           <td class="code empty">
