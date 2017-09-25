@@ -132,10 +132,7 @@ zero value for an <code>int</code> is <code>0</code>.</p>
         
         <tr>
           <td class="docs">
-            <p>The <code>:=</code> syntax is shorthand for declaring and
-initializing a variable, e.g. for
-<code>var f string = &quot;short&quot;</code> in this case.</p>
-            <p>A synxtax <code>:=</code> é um encurtador para declarar uma inicialização de variávei, o que corresponderia á <code>var f string = &quot;short&quot;</code></p>
+            <p>A sintaxe <code>:=</code> é um encurtador para declarar uma inicialização de variável, o que corresponderia á <code>var f string = &quot;short&quot;</code></p>
 
           </td>
           <td class="code">
